@@ -1,0 +1,21 @@
+a=[[1,2,3],[4,5,6],[6,6,7]]
+b=[[8,9,7],[4,4,5],[7,4,7]]
+add=[[0,0,0],[0,0,0],[0,0,0]]
+sub=[[0,0,0],[0,0,0],[0,0,0]]
+mul=[0,0,0],[0,0,0],[0,0,0]]
+for i in range(len(a)):
+    for j in range(len(b)):
+        add[i][j]=a[i][j]+b[i][j]
+        for r in add:
+            print(r)
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        sub[i][j]=a[i][j]-b[i][j]
+        for r in sub:
+            print(r)
+for i in range(len(a)):
+    for j in range(len(b[0])):
+        for k in range(len(b)):
+            mul[i][j]+=a[i][k]*b[k][j]
+            for r in mul:
+                print r
